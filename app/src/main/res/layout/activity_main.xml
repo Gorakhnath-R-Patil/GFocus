@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/selectFocusAppsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Focus Apps"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/startFocusButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Focus Mode"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/exitFocusButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit Focus Mode"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allowed Apps:"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/allowedAppsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>
